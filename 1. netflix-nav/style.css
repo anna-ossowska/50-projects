@@ -1,7 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -47,4 +50,52 @@ body {
 .nav.visible {
   /* Back to the screen */
   transform: translateX(0);
+}
+
+.nav-black {
+  background-color: #333;
+  width: 60%;
+  max-width: 480px;
+  min-width: 420px;
+}
+
+.nav-red {
+  background-color: rgb(210, 0, 0);
+  width: 95%;
+}
+
+.nav-white {
+  background-color: #fff;
+  width: 95%;
+  padding: 40px;
+  position: relative;
+}
+
+.close-btn {
+  opacity: 0.3;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list li {
+  list-style: none;
+  padding-left: 0px;
+  margin: 20px 0;
+}
+
+.list a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.list ul {
+  padding-left: 20px;
 }
