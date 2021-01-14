@@ -57,11 +57,25 @@ body {
   width: 60%;
   max-width: 480px;
   min-width: 420px;
+  /* invisible */
+  transition-delay: 0.4s;
+}
+
+/* visible */
+.nav-black.visible {
+  transition-delay: 0s;
 }
 
 .nav-red {
   background-color: rgb(210, 0, 0);
   width: 95%;
+  /* invisible */
+  transition-delay: 0.2s;
+}
+
+/* visible */
+.nav-red.visible {
+  transition-delay: 0.2s;
 }
 
 .nav-white {
@@ -69,9 +83,16 @@ body {
   width: 95%;
   padding: 40px;
   position: relative;
+  /* invisible */
+  transition-delay: 0s;
 }
 
-.close-btn {
+/* visible */
+.nav-white.visible {
+  transition-delay: 0.4s;
+}
+
+.nav-red .nav .close-btn {
   opacity: 0.3;
   position: absolute;
   top: 40px;
