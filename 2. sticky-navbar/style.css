@@ -31,7 +31,6 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  line-height: 1.7;
   position: relative;
   margin-bottom: 30px;
 }
@@ -48,4 +47,42 @@ body {
 
 .hero .container {
   z-index: 1;
+}
+
+.hero h1 {
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.btn-main {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 20px;
+  border-radius: 30px;
+  background-color: #f4f4f4;
+  color: #000;
+  font-weight: bold;
+}
+
+.btn-main:hover {
+  background-color: #d6d3d3;
+}
+
+.content h2,
+.content h3 {
+  font-size: 150%;
+  margin: 20px 0;
+}
+
+.content p {
+  color: #555;
+  line-height: 30px;
+  letter-spacing: 1px;
 }
