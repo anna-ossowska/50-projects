@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Montserrat';
+@import 'https://fonts.googleapis.com/css?family=Roboto';
 
 *,
 *::after,
@@ -10,6 +10,7 @@
 
 html {
   font-size: 62.5%;
+  font-family: 'Roboto', 'sans-serif';
 }
 
 body {
@@ -21,6 +22,11 @@ body {
   height: 100vh;
   width: 100%;
   font-size: 2rem;
+}
+
+h2 {
+  letter-spacing: 0.1rem;
+  font-weight: normal;
 }
 
 .container {
@@ -37,4 +43,28 @@ img {
   max-width: 100%;
   margin: 1rem;
   object-fit: cover;
+  filter: saturate(0.2);
+}
+
+.img-generator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-generator button {
+  all: unset;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  height: 4rem;
+  width: 4rem;
+  text-align: center;
+  margin: 2rem 0.7rem;
+  transition: all 0.2s ease-in;
+}
+
+.img-generator button:hover {
+  background-color: rgb(116, 1, 1);
+  color: #fff;
 }

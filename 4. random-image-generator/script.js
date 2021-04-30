@@ -1,21 +1,54 @@
+const generator1 = document.querySelector('.img-generator--1');
+const generator2 = document.querySelector('.img-generator--2');
+const generator3 = document.querySelector('.img-generator--3');
+
 const container = document.querySelector('.container');
 
 const unsplashURL = 'https://source.unsplash.com/random/';
 
-const numOfImages = 5;
+let numOfImages;
 
-for (let i = 0; i < numOfImages * 2; i++) {
-  const img = document.createElement('img');
+generator1.addEventListener('click', () => {
+  reset();
+  numOfImages = 5;
+  for (let i = 0; i < numOfImages; i++) {
+    const img = document.createElement('img');
+    img.src = `${unsplashURL}${generateRandSize()}`;
+    container.appendChild(img);
+  }
+});
 
-  img.src = `${unsplashURL}${randomDimension()}`;
+generator2.addEventListener('click', () => {
+  reset();
+  numOfImages = 10;
+  for (let i = 0; i < numOfImages; i++) {
+    const img = document.createElement('img');
+    img.src = `${unsplashURL}${generateRandSize()}`;
+    container.appendChild(img);
+  }
+});
 
-  container.appendChild(img);
-}
+generator3.addEventListener('click', () => {
+  reset();
+  numOfImages = 20;
+  for (let i = 0; i < numOfImages; i++) {
+    const img = document.createElement('img');
+    img.src = `${unsplashURL}${generateRandSize()}`;
+    container.appendChild(img);
+  }
+});
 
-function randomNumber() {
+function generateRandNum() {
   return Math.floor(Math.random() * 10) + 300;
 }
 
-function randomDimension() {
-  return `${randomNumber()}x${randomNumber()}`;
+function generateRandSize() {
+  return `${generateRandNum()}x${generateRandNum()}`;
+}
+
+function reset() {
+  let images = document.getElementsByTagName('img');
+  for (i = 0; i < images.length; i++) {
+    images[i].style.display = 'none';
+  }
 }
