@@ -1,0 +1,40 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  font-size: 2rem;
+}
+
+.container {
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100rem;
+}
+
+img {
+  height: 15rem;
+  width: 15rem;
+  max-width: 100%;
+  margin: 1rem;
+  object-fit: cover;
+}
