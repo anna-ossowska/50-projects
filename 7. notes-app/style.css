@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@200;400&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5rem;
+  background-color: rgb(203, 235, 255);
+}
+
+.add {
+  display: inline-block;
+  background-color: darkseagreen;
+  color: #fff;
+  padding: 1.25rem 2.25rem;
+  border-radius: 0.5rem;
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+  margin-bottom: 3rem;
+}
+
+.note {
+  background-color: #fff;
+  height: 45rem;
+  width: 40rem;
+  margin: 6rem 4rem;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  opacity: 0.8;
+  transition: all 0.25s ease-in-out;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.tool {
+  background-color: darkseagreen;
+  height: 5rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+textarea {
+  height: 100%;
+  width: 100%;
+  padding: 5rem;
+  font-size: 2.5rem;
+  color: rgba(0, 0, 0, 0.6);
+  outline: none;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
