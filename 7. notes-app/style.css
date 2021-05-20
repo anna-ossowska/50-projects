@@ -75,6 +75,7 @@ textarea {
   outline: none;
   border: none;
   font-family: 'Poppins', sans-serif;
+  cursor: pointer;
 }
 
 textarea:focus {
