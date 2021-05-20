@@ -21,15 +21,20 @@ const addNewNote = function (text = '') {
   const editBtn = note.querySelector('.edit');
   const main = note.querySelector('.main');
   const textArea = note.querySelector('textarea');
-
-  deleteBtn.addEventListener('click', function () {
+  textArea.value = text;
+  main.innerHTML = marked(text);
+  deleteBtn.addEventListener('click', () => {
     note.remove();
   });
 
-  editBtn.addEventListener('click', function () {
+  editBtn.addEventListener('click', () => {
     main.classList.toggle('hidden');
     textArea.classList.toggle('hidden');
   });
+
+  textArea.addEventListener('input', (e) => {
+    main.innerHTML = marked(e.target.value);
+  });
 };
 
-addBtn.addEventListener('click', addNewNote);
+addBtn.addEventListener('click', () => addNewNote());
